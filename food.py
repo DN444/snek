@@ -3,10 +3,10 @@ from random import randint
 class Food(Turtle):
     def __init__(self):
         super().__init__()
-        self.shape("circle")
-        self.color("red")
+        self.shape("turtle")
+        self.color("dark green")
         self.penup()
-        self.shapesize(stretch_wid=0.5,stretch_len=0.5)
+        self.shapesize(stretch_wid=1,stretch_len=1)
         self.speed("fastest")
         self.refresh()
     def refresh(self):

@@ -26,10 +26,8 @@ while game_on:
         snek.extend()
         scoreboard.increase_score()
     if snek.head.xcor()>340 or snek.head.xcor()<-340 or snek.head.ycor()>340 or snek.head.ycor()<-340:
-        game_on=False
-        scoreboard.game_over()
+        scoreboard.reset()
     for segment in snek.segments[1:]:
         if snek.head.distance(segment)<10:
-            game_on=False
-            scoreboard.game_over()
+            scoreboard.reset()
 screen.exitonclick()
